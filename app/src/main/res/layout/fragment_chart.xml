@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/relative_weekly"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn_daily"
+            android:layout_width="120dp"
+            android:layout_alignParentLeft="true"
+            android:layout_height="wrap_content"
+            android:text="Daily"
+            android:textColor="@color/white"
+            android:background="@color/ungu"/>
+        <Button
+            android:id="@+id/btn_weekly"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:text="Weekly"
+            android:layout_toRightOf="@id/btn_daily"
+            android:textColor="@color/white"
+            android:background="@color/ungu"/>
+        <Button
+            android:id="@+id/btn_monthly"
+            android:layout_alignParentRight="true"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:text="Monthly"
+            android:layout_toRightOf="@id/btn_weekly"
+            android:textColor="@color/white"
+            android:background="@color/ungu"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_below="@id/relative_weekly"
+        android:id="@+id/relativeLayoutdateDaily"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/bg_cardlayout">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayoutTotal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Expense"
+                android:textAllCaps="true"
+                android:textSize="12dp"
+                android:textColor="@color/ungu"
+                android:layout_marginLeft="275dp"/>
+            <TextView
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:textSize="18dp"
+                android:text="TOTAL EXPENSES"
+                android:textColor="@color/ungu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="275dp"
+                android:id="@+id/TVtotalExpense"
+                android:textSize="18dp"
+                android:text="0"
+                android:textColor="@color/ungu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/relativeLayoutdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true">
+
+            <Button
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:id="@+id/jan"
+                android:text="Jan"
+                android:textSize="10dp"
+                android:background="@drawable/bg_cardlayout"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="10dp"/>
+            <Button
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:id="@+id/feb"
+                android:text="Feb"
+                android:textSize="10dp"
+                android:layout_toRightOf="@id/jan"
+                android:background="@drawable/bg_cardlayout"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"/>
+            <Button
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:id="@+id/mar"
+                android:text="Mar"
+                android:textSize="10dp"
+                android:layout_toRightOf="@id/feb"
+                android:background="@drawable/bg_cardlayout"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"/>
+            <Button
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:id="@+id/Apr"
+                android:text="Apr"
+                android:textSize="10dp"
+                android:layout_toRightOf="@id/mar"
+                android:background="@drawable/bg_cardlayout"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"/>
+            <Button
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:id="@+id/May"
+                android:text="May"
+                android:textSize="10dp"
+                android:layout_toRightOf="@id/Apr"
+                android:background="@drawable/bg_cardlayout"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"/>
+            <Button
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:id="@+id/Jun"
+                android:text="Jun"
+                android:textSize="10dp"
+                android:layout_toRightOf="@id/May"
+                android:background="@drawable/bg_cardlayout"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"/>
+
+            <Button
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:id="@+id/jul"
+                android:text="Jul"
+                android:textSize="10dp"
+                android:background="@drawable/bg_cardlayout"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="45dp"/>
+
+            <Button
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:id="@+id/Aug"
+                android:text="Aug"
+                android:textSize="10dp"
+                android:layout_toRightOf="@id/jul"
+                android:background="@drawable/bg_cardlayout"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="45dp"/>
+            <Button
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:id="@+id/Sep"
+                android:text="Sep"
+                android:textSize="10dp"
+                android:layout_toRightOf="@id/Aug"
+                android:background="@drawable/bg_cardlayout"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="45dp"/>
+            <Button
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:id="@+id/Oct"
+                android:text="Oct"
+                android:textSize="10dp"
+                android:layout_toRightOf="@id/Sep"
+                android:background="@drawable/bg_cardlayout"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="45dp"/>
+            <Button
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:id="@+id/Nov"
+                android:text="Nov"
+                android:textSize="10dp"
+                android:layout_toRightOf="@id/Oct"
+                android:background="@drawable/bg_cardlayout"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="45dp"/>
+            <Button
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:id="@+id/Dec"
+                android:text="Dec"
+                android:textSize="10dp"
+                android:layout_toRightOf="@id/Nov"
+                android:background="@drawable/bg_cardlayout"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="45dp"/>
+        </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativeLayoutdateWeekly"
+                android:layout_width="match_parent"
+                android:layout_height="80dp">
+
+                <ImageView
+                    android:onClick="leftArrow"
+                    android:clickable="true"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_chevron_left_black_24dp"
+                    android:id="@+id/leftArrow"
+                    android:backgroundTint="@color/white"
+                    android:background="?attr/selectableItemBackgroundBorderless"/>
+
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_toRightOf="@+id/leftArrow"
+                    android:id="@+id/dateStartWeek"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2019-10-01"/>
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/to"
+                    android:layout_toRightOf="@id/dateStartWeek"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="-"/>
+                <TextView
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="2019-10-07"
+                    android:layout_toRightOf="@id/to"
+                    android:id="@+id/dateEndWeek"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:onClick="rightArrow"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:clickable="true"
+                    android:backgroundTint="@color/white"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/dateEndWeek"
+                    android:id="@+id/rightArrow"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/ic_chevron_right_black_24dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/tv"
+                    android:layout_marginLeft="90dp"
+                    android:layout_marginTop="45dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Weekly Expense: "
+                    android:textSize="16dp"/>
+                <TextView
+                    android:textSize="16dp"
+                    android:id="@+id/weeklytotal"
+                    android:text="1000"
+                    android:layout_marginTop="45dp"
+                    android:layout_toRightOf="@id/tv"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/dailyInside"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Today Expense"
+                    android:textAllCaps="true"
+                    android:textSize="12dp"
+                    android:textColor="@color/ungu"
+                    android:layout_marginLeft="250dp"/>
+
+                <ImageView
+                    android:onClick="dayleftArrow"
+                    android:clickable="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/ic_chevron_left_black_24dp"
+                    android:id="@+id/dayleftArrow"
+                    android:backgroundTint="@color/white"
+                    android:background="?attr/selectableItemBackgroundBorderless"/>
+
+                <TextView
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/TVcurrentDate"
+                    android:textSize="18dp"
+                    android:text="DAILY"
+                    android:layout_toRightOf="@id/dayleftArrow"
+                    android:textColor="@color/ungu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:onClick="dayRightArrow"
+                    android:clickable="true"
+                    android:layout_toRightOf="@id/TVcurrentDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/ic_chevron_right_black_24dp"
+                    android:id="@+id/dayRightArrow"
+                    android:backgroundTint="@color/white"
+                    android:background="?attr/selectableItemBackgroundBorderless"/>
+
+                <TextView
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="270dp"
+                    android:id="@+id/TVcurrentExpense"
+                    android:textSize="18dp"
+                    android:text="Expense"
+                    android:textColor="@color/ungu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_below="@id/relative_weekly"
+        android:layout_marginTop="5dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/relativeSpending"
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+
+        <TextView
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/TVcurrentMonth"
+            android:textSize="18dp"
+            android:text="Month"
+            android:textAllCaps="true"
+            android:textColor="@color/ungu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="EXPENSE"
+            android:textAllCaps="true"
+            android:textSize="12dp"
+            android:textColor="@color/ungu"
+            android:layout_marginLeft="270dp"/>
+        <TextView
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="270dp"
+            android:id="@+id/expenserp"
+            android:textSize="18dp"
+            android:text="0"
+            android:textColor="@color/ungu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/relativeLayout"
+        android:background="@drawable/bg_cardlayout"
+        android:layout_below="@id/relativeLayoutdateDaily">
+
+        <com.github.mikephil.charting.charts.PieChart
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/idPieChart">
+        </com.github.mikephil.charting.charts.PieChart>
+
+
+    </RelativeLayout>
+
+
+    <!--<android.support.design.widget.FloatingActionButton-->
+        <!--android:id="@+id/fab"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_alignParentEnd="true"-->
+        <!--android:layout_gravity="bottom|end"-->
+        <!--android:layout_marginBottom="72dp"-->
+        <!--android:fontFamily="@font/helvetica"-->
+        <!--android:src="@drawable/ic_camera" />-->
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_below="@id/relativeLayout"
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_alignStart="@+id/relativeLayout"
+        android:background="@drawable/bg_cardlayout">
+
+    </android.support.v7.widget.RecyclerView>
+
+</RelativeLayout>

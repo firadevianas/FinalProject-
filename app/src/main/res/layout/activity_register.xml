@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.firadevianas.deteksitext.Register"
+    android:background="@drawable/bg_login">
+
+    <ImageView
+        android:alpha="0.15"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        android:src="@drawable/logo1"/>
+    <EditText
+        android:id="@+id/usernameRegis"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="200dp"
+        android:background="@drawable/bg_edittext"
+        android:hint="Email Address"
+        android:inputType="textEmailAddress"
+        android:padding="16dp"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/helvetica"
+        android:textColor="@color/login_form_details"
+        android:textColorHint="@color/login_form_details" />
+
+    <EditText
+        android:id="@+id/passwordRegis"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/usernameRegis"
+        android:layout_below="@+id/usernameRegis"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/bg_edittext"
+        android:hint="Password"
+        android:layout_centerHorizontal="true"
+        android:inputType="textPassword"
+        android:padding="16dp"
+        android:fontFamily="@font/helvetica"
+        android:textColor="@color/login_form_details"
+        android:textColorHint="@color/login_form_details" />
+
+    <Button
+        android:id="@+id/btn_regis"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="25dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/bg_btn"
+        android:layout_below="@id/passwordRegis"
+        android:text="Register"
+        android:fontFamily="@font/helvetica"
+        android:textAllCaps="false"
+        android:textColor="@color/login_form_details" />
+
+
+</RelativeLayout>

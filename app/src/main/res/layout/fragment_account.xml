@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:title="Account"
+        app:titleTextColor="@color/white"
+        android:background="@color/ungu"
+        android:id="@+id/toolbar"
+        ></android.support.v7.widget.Toolbar>
+    <RelativeLayout
+        android:layout_below="@id/toolbar"
+        android:id="@+id/relativeLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/bg_cardlayout">
+
+        <TextView
+            android:id="@+id/budget"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@+id/view4"
+            android:layout_marginStart="31dp"
+            android:text="Budget" />
+
+        <TextView
+            android:id="@+id/budgetrp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/balancerp"
+            android:layout_alignBottom="@+id/balancerp"
+            android:layout_alignStart="@+id/budget"
+            android:text="0"
+            android:textSize="18dp"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="80dp"
+            android:layout_alignTop="@+id/view2"
+            android:layout_marginStart="45dp"
+            android:layout_toEndOf="@+id/budget"
+            android:background="@color/ungu"
+            android:id="@+id/view4" />
+
+
+        <TextView
+            android:id="@+id/expense"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/view2"
+            android:layout_marginEnd="29dp"
+            android:text="Expense" />
+
+        <TextView
+            android:id="@+id/expenserp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/balancerp"
+            android:layout_alignBottom="@+id/balancerp"
+            android:layout_alignStart="@+id/expense"
+            android:text="0"
+            android:textSize="18dp" />
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="1dp"
+            android:layout_height="80dp"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="35dp"
+            android:layout_toStartOf="@+id/expense"
+            android:background="@color/ungu" />
+
+        <TextView
+            android:id="@+id/balance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/view4"
+            android:layout_centerHorizontal="true"
+            android:text="Balance" />
+
+        <TextView
+            android:id="@+id/balancerp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/balance"
+            android:layout_centerVertical="true"
+            android:text="0"
+            android:textColor="@color/biru"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/Budgetdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/budget"
+            android:layout_marginStart="17dp"
+            android:text="Budget Period : "
+            android:textSize="10dp" />
+
+        <TextView
+            android:id="@+id/BudgetdateFrom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="YYYY-MM-DD"
+            android:textSize="10dp" />
+
+        <TextView
+            android:id="@+id/To"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/BudgetdateFrom"
+            android:text="  to  "
+            android:textSize="10dp" />
+
+        <TextView
+            android:id="@+id/BudgetdateTo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/To"
+            android:text="YYYY-MM-DD"
+            android:textSize="10dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/rlBtnplan"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/bg_cardlayout"
+        android:id="@+id/rlBudgetPlan">
+
+        <ImageView
+            android:id="@+id/tvamount"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@mipmap/ic_money"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"/>
+
+
+        <EditText
+            android:inputType="number"
+            android:textSize="12dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/editamount"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:textColor="@color/ungu"
+            android:layout_toRightOf="@id/tvamount"
+            android:hint="Budget Amount" />
+
+        <ImageView
+            android:id="@+id/tvdateFrom"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@mipmap/ic_calendar1"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@id/tvamount"
+            android:layout_marginTop="20dp" />
+
+        <EditText
+            android:id="@+id/editDateFrom"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@id/editamount"
+            android:layout_toRightOf="@id/tvdateFrom"
+            android:hint="Date From YYYY-MM-DD"
+            android:textColor="@color/ungu"
+            android:textSize="12dp"
+            android:inputType="date"/>
+
+        <ImageView
+            android:id="@+id/tvdateTo"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@mipmap/ic_calendar1"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@id/tvdateFrom"
+            android:layout_marginTop="20dp"/>
+
+
+        <EditText
+            android:id="@+id/editDateTo"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_toRightOf="@id/tvdateTo"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@id/editDateFrom"
+            android:textColor="@color/ungu"
+            android:hint="Date To YYYY-MM-DD"
+            android:textSize="12dp"
+            android:inputType="date"/>
+
+        <ImageView
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/tvdateTo"
+            android:layout_marginLeft="20dp"
+            android:src="@mipmap/ic_alert"
+            android:id="@+id/alertImage"
+            android:layout_width="25dp"
+            android:layout_height="25dp" />
+        <EditText
+            android:id="@+id/percen1"
+            android:layout_width="35dp"
+            android:layout_height="40dp"
+            android:layout_toRightOf="@id/alertImage"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@id/editDateTo"
+            android:textColor="@color/ungu"
+            android:hint="%"
+            android:inputType="number"
+            android:textSize="12dp"/>
+
+        <TextView
+            android:id="@+id/to1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/percen1"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="5dp"
+            android:layout_below="@id/editDateTo"
+            android:textColor="@color/ungu"
+            android:text="-"
+            android:textSize="20dp"/>
+
+        <EditText
+            android:id="@+id/percen2"
+            android:layout_width="35dp"
+            android:layout_height="40dp"
+            android:layout_toRightOf="@id/to1"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_below="@id/editDateTo"
+            android:textColor="@color/ungu"
+            android:inputType="number"
+            android:hint="%"
+            android:textSize="12dp"/>
+
+        <TextView
+            android:id="@+id/to2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/percen2"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="5dp"
+            android:layout_below="@id/editDateTo"
+            android:textColor="@color/ungu"
+            android:text="-"
+            android:textSize="20dp"/>
+        <EditText
+            android:id="@+id/percen3"
+            android:layout_width="35dp"
+            android:layout_height="40dp"
+            android:layout_toRightOf="@id/to2"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_below="@id/editDateTo"
+            android:textColor="@color/ungu"
+            android:hint="%"
+            android:inputType="number"
+            android:textSize="12dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/percen3"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="1dp"
+            android:layout_below="@id/editDateTo"
+            android:textColor="@color/ungu"
+            android:text="%"
+            android:textSize="18dp"/>
+
+
+        <Button
+            android:id="@+id/buttonSave"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/percen3"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/bg_btn2"
+            android:textColor="@color/ungu"
+            android:text="Save" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlBtnplan"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relativeLayout3">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Budget Plan"
+            android:textAllCaps="true"
+            android:layout_centerVertical="true"
+            android:fontFamily="@font/helvetica"
+            android:layout_toRightOf="@id/hideShow"/>
+
+        <android.support.v7.widget.AppCompatImageButton
+            android:id="@+id/hideShow"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:backgroundTint="@color/ungutua"
+            android:src="@drawable/arrowdown"/>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_logout"
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:layout_marginRight="320dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bg_btn2"
+        android:layout_marginBottom="70dp"
+        android:fontFamily="@font/helvetica"
+        android:layout_alignRight="@id/relativeLayout3"
+        android:text="Logout"
+        android:textSize="10dp"
+        android:textAllCaps="false"
+        android:textColor="@color/purple" />
+
+</RelativeLayout>

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.firadevianas.deteksitext.Detail">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:title="Detail"
+        app:titleTextColor="@color/white"
+        android:background="@color/ungu"
+        android:id="@+id/toolbar"></android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout4"
+        android:layout_width="350dp"
+        android:layout_height="280dp"
+        android:layout_below="@+id/toolbar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/bg_cardlayout">
+
+        <TextView
+            android:id="@+id/nameTrans"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="52dp"
+            android:layout_marginTop="17dp"
+            android:fontFamily="@font/helveticabold"
+            android:text="Telephone"
+            android:textSize="22dp"
+            />
+
+        <View
+            android:id="@+id/view3"
+            android:layout_width="320dp"
+            android:layout_height="1dp"
+            android:layout_below="@+id/nameTrans"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="13dp"
+            android:background="@color/lightgrey" />
+
+        <TextView
+            android:id="@+id/amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="80dp"
+            android:fontFamily="@font/helvetica"
+            android:text="Amount"
+            android:textColor="@color/blue" />
+
+        <TextView
+            android:id="@+id/amountrp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="80dp"
+            android:fontFamily="@font/helvetica"
+            android:text="Rp"
+            android:textColor="@color/colorPrimary" />
+
+        <TextView
+            android:id="@+id/amountview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="125dp"
+            android:layout_marginTop="80dp"
+            android:fontFamily="@font/helvetica"
+            android:text="20000"
+            android:textColor="@color/colorPrimary" />
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="120dp"
+            android:fontFamily="@font/helvetica"
+            android:text="Date"
+            android:textColor="@color/blue" />
+
+        <TextView
+            android:id="@+id/dateview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="120dp"
+            android:fontFamily="@font/helvetica"
+            android:text="12/05/2018"
+            android:textColor="@color/colorPrimary" />
+
+        <TextView
+            android:id="@+id/category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="160dp"
+            android:fontFamily="@font/helvetica"
+            android:text="Category"
+            android:textColor="@color/blue" />
+
+        <TextView
+            android:id="@+id/categoryview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="160dp"
+            android:fontFamily="@font/helvetica"
+            android:text="Saving"
+            android:textColor="@color/colorPrimary" />
+
+        <TextView
+            android:id="@+id/desciption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="200dp"
+            android:fontFamily="@font/helvetica"
+            android:text="Description"
+            android:textColor="@color/blue" />
+
+        <TextView
+            android:id="@+id/desciptionview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="200dp"
+            android:fontFamily="@font/helvetica"
+            android:text="Kuota 5gb"
+            android:textColor="@color/colorPrimary" />
+
+        <android.support.v7.widget.AppCompatImageButton
+            android:id="@+id/deletebtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/view3"
+            android:backgroundTint="@color/white"
+            android:layout_below="@+id/desciptionview"
+            android:src="@mipmap/ic_delete" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

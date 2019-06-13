@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="purple">#AB64F6</color>
+    <color name="blue">#61dbf7</color>
+    <color name="yellowish">#ffffe6</color>
+    <color name="lightgrey">#999999</color>
+    <color name="white">#ffffff</color>
+    <color name="lightgrey2">#f2f2f2</color>
+    <color name="ungu">#8A58A7</color>
+    <color name="biru">#A098C8</color>
+    <color name="salmon">#D891A3</color>
+    <color name="ungutua">#965ABA</color>
+    <color name="ungu2">#31174C</color>
+
+    <color name="login_form_details">#ccffffff</color>
+    <color name="login_form_details_light">#1affffff</color>
+    <color name="login_form_details_medium">#66ffffff</color>
+</resources>

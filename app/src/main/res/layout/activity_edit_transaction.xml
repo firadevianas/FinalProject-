@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.firadevianas.deteksitext.EditTransaction">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:title="Edit Transaction"
+        app:titleTextColor="@color/white"
+        android:background="@color/ungu"
+        android:id="@+id/toolbar"
+        ></android.support.v7.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/TVTitle"
+        android:layout_below="@id/toolbar"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Title"
+        android:textColor="@color/ungu"
+        android:textAllCaps="true"
+        android:textSize="22dp"/>
+
+    <TextView
+        android:textColor="@color/white"
+        android:layout_centerVertical="true"
+        android:id="@+id/TVId"
+        android:layout_below="@id/TVTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ID"
+        android:textSize="10dp"
+        />
+    <RelativeLayout
+        android:layout_width="360dp"
+        android:layout_height="310dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@color/white"
+        android:id="@+id/relativeLayout2">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:src="@mipmap/ic_calendar1" />
+
+        <EditText
+            android:id="@+id/Etdate"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/helvetica"
+            android:hint="Select Date"
+            android:inputType="date"
+            android:textColor="@color/ungu"
+            android:textColorHint="@color/lightgrey" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="75dp"
+            android:src="@mipmap/ic_money" />
+
+        <EditText
+            android:id="@+id/Etamount"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="75dp"
+            android:fontFamily="@font/helvetica"
+            android:hint="Amount"
+            android:inputType="number"
+            android:textColor="@color/ungu"
+            android:textColorHint="@color/lightgrey"/>
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="135dp"
+            android:src="@mipmap/ic_desc" />
+
+        <EditText
+            android:id="@+id/Etdesc"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="135dp"
+            android:fontFamily="@font/helvetica"
+            android:hint="Description"
+            android:inputType="text"
+            android:textColor="@color/ungu"
+            android:textColorHint="@color/lightgrey" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="195dp"
+            android:src="@mipmap/ic_category" />
+
+        <Spinner
+            android:id="@+id/category_spinner"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="200dp"
+            android:fontFamily="@font/helvetica"
+            android:hint="Category"
+            android:textColor="@color/ungu"
+            android:textColorHint="@color/lightgrey"/>
+
+
+        <!--<ImageView-->
+        <!--android:layout_width="40dp"-->
+        <!--android:layout_height="50dp"-->
+        <!--android:layout_marginLeft="20dp"-->
+        <!--android:layout_marginTop="260dp"-->
+        <!--android:src="@mipmap/ic_title" />-->
+
+        <!--<EditText-->
+        <!--android:id="@+id/Ettitle"-->
+        <!--android:layout_width="250dp"-->
+        <!--android:layout_height="50dp"-->
+        <!--android:layout_marginLeft="70dp"-->
+        <!--android:layout_marginTop="260dp"-->
+        <!--android:fontFamily="@font/helvetica"-->
+        <!--android:hint="Title"-->
+        <!--android:inputType="none"-->
+        <!--android:textColor="@color/lightgrey"-->
+        <!--android:textColorHint="@color/lightgrey" />-->
+
+        <android.support.v7.widget.AppCompatImageButton
+            android:id="@+id/btn_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_save"
+            android:layout_below="@id/category_spinner"
+            android:backgroundTint="@color/white"
+            android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.firadevianas.deteksitext.Login"
+    android:background="@drawable/bg_login">
+
+    <ImageView
+        android:alpha="0.5"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:layout_width="135dp"
+        android:layout_height="135dp"
+        android:src="@drawable/logo1"/>
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="200dp"
+        android:background="@drawable/bg_edittext"
+        android:hint="Email Address"
+        android:inputType="textEmailAddress"
+        android:padding="16dp"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/helvetica"
+        android:textColor="@color/login_form_details"
+        android:textColorHint="@color/login_form_details" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/username"
+        android:layout_below="@+id/username"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/bg_edittext"
+        android:hint="Password"
+        android:layout_centerHorizontal="true"
+        android:inputType="textPassword"
+        android:padding="16dp"
+        android:fontFamily="@font/helvetica"
+        android:textColor="@color/login_form_details"
+        android:textColorHint="@color/login_form_details" />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/bg_btn"
+        android:layout_below="@id/register"
+        android:text="Login"
+        android:fontFamily="@font/helvetica"
+        android:textAllCaps="false"
+        android:textColor="@color/login_form_details" />
+
+    <TextView
+        android:id="@+id/register"
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:clickable="true"
+        android:layout_below="@id/password"
+        android:layout_alignEnd="@id/password"
+        android:fontFamily="@font/helvetica"
+        android:text="Register"
+        android:textColor="@color/login_form_details"
+        android:textSize="14dp" />
+
+
+</RelativeLayout>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:title="Add Expenses"
+        app:titleTextColor="@color/white"
+        android:background="@color/ungu"
+        android:id="@+id/toolbar"
+        ></android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="360dp"
+        android:layout_height="330dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/bg_cardlayout"
+        android:id="@+id/relativeLayout2">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:src="@mipmap/ic_calendar1" />
+
+        <EditText
+            android:id="@+id/Etdate"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/helvetica"
+            android:hint="Select Date"
+            android:inputType="date"
+            android:textColor="@color/ungu"
+            android:textColorHint="@color/lightgrey" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="75dp"
+            android:src="@mipmap/ic_money" />
+
+        <EditText
+            android:id="@+id/Etamount"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="75dp"
+            android:fontFamily="@font/helvetica"
+            android:hint="Amount"
+            android:inputType="number"
+            android:textColor="@color/ungu"
+            android:textColorHint="@color/lightgrey"/>
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="135dp"
+            android:src="@mipmap/ic_desc" />
+
+        <EditText
+            android:id="@+id/Etdesc"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="135dp"
+            android:fontFamily="@font/helvetica"
+            android:hint="Description"
+            android:inputType="text"
+            android:textColor="@color/ungu"
+            android:textColorHint="@color/lightgrey" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="195dp"
+            android:src="@mipmap/ic_category" />
+
+        <Spinner
+            android:id="@+id/category_spinner"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="200dp"
+            android:fontFamily="@font/helvetica"/>
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="260dp"
+            android:src="@mipmap/ic_title" />
+
+        <EditText
+            android:id="@+id/Ettitle"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="260dp"
+            android:fontFamily="@font/helvetica"
+            android:hint="Title"
+            android:inputType="text"
+            android:textColor="@color/ungu"
+            android:textColorHint="@color/lightgrey" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/relativeLayout2"
+        android:layout_below="@+id/relativeLayout2"
+        android:layout_marginEnd="118dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_btn"
+        android:fontFamily="@font/helvetica"
+        android:text="Save"
+        android:textAllCaps="false"
+        android:textColor="@color/purple" />
+
+</RelativeLayout>
